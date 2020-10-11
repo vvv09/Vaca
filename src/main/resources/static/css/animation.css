@@ -1,0 +1,35 @@
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.rotateIn {
+    -webkit-animation-name: rotateIn;
+    animation-name: rotateIn;
+}
+
+@keyframes rotateIn {
+    from {
+        opacity: 0;
+        transform: rotate3d(0, 0, 1, -200deg);
+        transform-origin: center;
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        transform-origin: center;
+    }
+}
+
+@-webkit-keyframes rotateIn {
+    from {
+        opacity: 0;
+        transform: rotate3d(0, 0, 1, -200deg);
+        transform-origin: center;
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        transform-origin: center;
+    }
+}
